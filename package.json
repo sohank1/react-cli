@@ -7,7 +7,7 @@
     "start": "node build/index.js",
     "build": "tsc",
     "prod": "npm run build && npm start",
-    "dev": "nodemon --exec src/index.ts --watch"
+    "dev": "nodemon --exec ts-node src/index.ts"
   },
   "repository": {
     "type": "git",

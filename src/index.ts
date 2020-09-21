@@ -1,1 +1,1 @@
-console.log("sffd");
+console.log(process.argv.slice(2));
