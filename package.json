@@ -1,0 +1,32 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "A command line interface for react to generate components, pages, and more.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "tsc",
+    "prod": "npm run build && npm start",
+    "dev": "nodemon --exec src/index.ts --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreeperPlanet26/react-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreeperPlanet26/react-cli/issues"
+  },
+  "homepage": "https://github.com/CreeperPlanet26/react-cli#readme",
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.11.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
