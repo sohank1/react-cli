@@ -12,6 +12,6 @@
         "baseUrl": "./",
         "incremental": true,
         "strictNullChecks": false,
-        "allowJs": true
+        "resolveJsonModule": true
     }
 }

@@ -1,0 +1,15 @@
+{
+    "generate": {
+        "aliases": [
+            "g",
+            "gen"
+        ],
+        "description": "Generate a",
+        "component": {
+            "aliases": [
+                "c"
+            ],
+            "description": "Generates a com"
+        }
+    }
+}
