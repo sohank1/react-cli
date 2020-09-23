@@ -21,6 +21,7 @@ for (const key of Object.keys(commandsJson)) {
 }
 
 const file = `export const CommandNames = ${JSON.stringify(commands, null, 4)};`;
+console.log(file);
 
 fs.writeFile(join(__dirname, "..", "src", "constants", "commandNames.ts"), file)
     .then(() => console.log("Generated!"));
