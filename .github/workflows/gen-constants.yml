@@ -1,0 +1,13 @@
+name: Generate Constants
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "script automatically generated constants"
+          git push
