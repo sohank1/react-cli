@@ -1,7 +1,7 @@
 name: Generate Constants
 on: push
 jobs:
-  build:
+  Generate Constants:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@master
@@ -9,6 +9,7 @@ jobs:
            node-version: 12
       - uses: actions/checkout@v2
       - run: |
+          npm ci
           npm run genConstants
           git config user.name github-actions
           git config user.email github-actions@github.com
