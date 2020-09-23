@@ -7,7 +7,8 @@
         "description": "Generate a",
         "component": {
             "aliases": [
-                "c"
+                "c",
+                "comp"
             ],
             "description": "Generates a React component."
         }
