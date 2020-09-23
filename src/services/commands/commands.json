@@ -9,7 +9,7 @@
             "aliases": [
                 "c"
             ],
-            "description": "Generates a com"
+            "description": "Generates a React component."
         }
     }
 }
