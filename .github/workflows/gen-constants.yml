@@ -4,6 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@master
+        with: 
+           node-version: 12
       - uses: actions/checkout@v2
       - run: |
           npm run genConstants
