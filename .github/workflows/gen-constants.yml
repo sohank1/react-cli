@@ -14,5 +14,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
+          git status
           git commit -m "script automatically generated constants"
           git push
