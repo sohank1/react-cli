@@ -4,7 +4,7 @@ import { CommandNames } from "../constants/CommandNames";
 export class Parser {
 
     /**
-     * Returns parsed args from the user input.
+     * Returns parsed args from the user's input.
      * Does not have the first word "react-cli" in this array.
      */
     public input = process.argv.slice(3);
