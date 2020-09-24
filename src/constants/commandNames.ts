@@ -6,6 +6,7 @@ export const CommandNames = {
     ],
     "GENERATE_COMPONENT": [
         "component",
-        "c"
+        "c",
+        "comp"
     ]
 };

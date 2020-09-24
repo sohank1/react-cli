@@ -1,0 +1,19 @@
+name: Generate Constants
+on: push
+jobs:
+  Generate-Constants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@master
+        with: 
+           node-version: 12
+      - uses: actions/checkout@v2
+      - run: |
+          npm ci
+          npm run genConstants
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git status
+          git commit -m "script automatically generated constants"
+          git push

@@ -1,4 +1,4 @@
-const fs = require("fs/promises")
+const { promises: fs } = require("fs")
 const { join } = require("path");
 const commandsJson = require("../src/services/commands/commands.json");
 
