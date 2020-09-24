@@ -9,7 +9,9 @@ export class Parser {
      */
     public input = process.argv.slice(3);
 
-
+    /**
+     * Returns the parsed command to run in "PascalCase".
+     */
     public commandName(): string {
         console.log("input", this.input)
         for (const constant of Object.keys(CommandNames).reverse()) {
