@@ -1,6 +1,6 @@
 const { promises: fs } = require("fs")
 const { join } = require("path");
-const commandsJson = require("../src/services/commands/commands.json");
+const commandsJson = require("../src/commands/commands.json");
 
 const commandNames = {};
 
@@ -28,5 +28,5 @@ let file = `
 export const CommandNames = ${JSON.stringify(commandNames, null, 4)};
 `;
 
-fs.writeFile(join(__dirname, "..", "src", "constants", "commandNames.ts"), file)
+fs.writeFile(join(__dirname, "..", "src", "constants", "CommandNames.ts"), file)
     .then(() => console.log("Successfully Generated!"));

@@ -1,8 +1,6 @@
-console.log(process.argv.slice(2));
+import { parser } from "./services/Parser";
+import './util/replaceAt';
 
-const Commands = {
-    GENERATE: ["generate", "gen"]
-}
+console.log(parser.commandName())
 
 
-if (Commands.GENERATE.includes("gen")) console.log("valid command")
