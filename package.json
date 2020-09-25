@@ -5,8 +5,8 @@
   "main": "build/index.js",
   "bin": {
     "react-cli": "build/index.js",
-    "react": "build/index.js" 
- },
+    "react": "build/index.js"
+  },
   "scripts": {
     "start": "node build/index.js",
     "build": "tsc",
