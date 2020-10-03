@@ -1,5 +1,6 @@
 #!/usr/bin/env node
+import { handler } from "./services/Handler";
 import { parser } from "./services/Parser";
 import './util/replaceAt';
 
-console.log(parser.commandName())
+handler.runCommand();

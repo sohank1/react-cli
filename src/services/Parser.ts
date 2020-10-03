@@ -16,7 +16,8 @@ export class Parser {
         console.log("input", this.input)
         for (const constant of Object.keys(CommandNames).reverse()) {
             for (let i = 0; i < 5; i++)
-                if (CommandNames[constant].includes(this.input[i])) return _.camelCase(constant).replaceAt(0, _.camelCase(constant)[0].toUpperCase())
+                if (CommandNames[constant].includes(this.input[i]))
+                    return constant.replace("_", " ").toLowerCase().replaceAt(0, constant[0].toUpperCase()).replaceAt(constant.indexOf("_") + 1, constant[constant.indexOf("_") + 1].toUpperCase());
         }
     }
 }
